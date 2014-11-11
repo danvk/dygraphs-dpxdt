@@ -25,3 +25,48 @@ tests:
   - name: stock
     url: http://localhost:8001/tests/stock.html
     config: *std-config
+
+  - name: charting-combinations
+    url: http://localhost:8001/tests/charting-combinations.html
+    config: *std-config
+
+  - name: custom-bars
+    url: http://localhost:8001/tests/custom-bars.html
+    config: *std-config
+
+  - name: custom-circles
+    url: http://localhost:8001/tests/custom-circles.html
+    config: *std-config
+
+  - name: fillGraph
+    url: http://localhost:8001/tests/fillGraph.html
+    config: *std-config
+
+  - name: grid_dot
+    url: http://localhost:8001/tests/grid_dot.html
+    config: *std-config
+
+  - name: logscale
+    url: http://localhost:8001/tests/logscale.html
+    config: *std-config
+
+  - name: missing-data
+    url: http://localhost:8001/tests/missing-data.html
+    config: *std-config
+
+  - name: per-series
+    url: http://localhost:8001/tests/per-series.html
+    config: *std-config
+
+  - name: plotters
+    url: http://localhost:8001/tests/plotters.html
+    config: *std-config
+
+  - name: stacked
+    url: http://localhost:8001/tests/stacked.html
+    config: *std-config
+
+  - name: steps
+    url: http://localhost:8001/tests/steps.html
+    config: *std-config
+
