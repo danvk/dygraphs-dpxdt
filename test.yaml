@@ -1,0 +1,27 @@
+setup: |
+    cd ../dygraphs
+    python -m SimpleHTTPServer 8001
+
+waitFor:
+    url: http://localhost:8001/
+
+aliases:
+  - &std-config
+      injectCss: |
+        body {
+          background-color: white;
+        }
+
+tests:
+  - name: demo
+    url: http://localhost:8001/tests/demo.html
+    config: *std-config
+
+  - name: daylight-savings
+    url: http://localhost:8001/tests/daylight-savings.html
+    config:
+      <<: *std-config
+
+  - name: stock
+    url: http://localhost:8001/tests/stock.html
+    config: *std-config
